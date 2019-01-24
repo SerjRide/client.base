@@ -327,7 +327,6 @@ $("select[name='product']").change(function(){
     let Type = $("select[name='stampType']").val();
     if($("select[name='stampType']").val() === "Ручная") var stampTypeCost = stampRigCost;
     else if ($("select[name='stampType']").val() === "Автомат") var stampTypeCost = 400 + stampRigCost;
-
     let Count = Number($("input[name='stampCount']").val());
 
     var tCost = Count * stampTypeCost;

@@ -319,14 +319,40 @@ $("select[name='product']").change(function(){
   });
   $("input[name='addStamp']").click(function(){
     $('#statusStringBlock').show(function(){});
-    let Count = ($("input[name='stampCount']").val() + 'шт. ');
-    let Rig = ('<br/>'+$("select[name='stampRig']").val());
-    let Type = (' ('+$("select[name='stampType']").val()+')');
-    $('#statusString').prepend('<p id="statusItem"><i class="fas fa-plus"></i> Печать: ' + Count  + Rig + Type + '</p>');
+
+    let Rig = $("select[name='stampRig']").val();
+    if($("select[name='stampRig']").val() === "30") var stampRigCost = 250;
+    else if ($("select[name='stampRig']").val() === "40") var stampRigCost = 300;
+
+    let Type = $("select[name='stampType']").val();
+    if($("select[name='stampType']").val() === "Ручная") var stampTypeCost = stampRigCost;
+    else if ($("select[name='stampType']").val() === "Автомат") var stampTypeCost = 400 + stampRigCost;
+
+    let Count = Number($("input[name='stampCount']").val());
+
+    var tCost = Count * stampTypeCost;
+
+    $('#statusString').prepend(
+      '<p id="statusItem"><i class="fas fa-plus"></i> Печать: '
+      + Count  + ' шт.<br/>'
+      + Rig + ' ('
+      + Type + ')<br/>'
+      + 'Цена: ' + tCost + ' руб.</p>'
+    );
+
+    if ($('#summaString').hasClass("activeString")){
+      summTCost = tCost + Number($(".summCount").text());
+      $('.summCount').empty().append(summTCost);
+    }
+    else{
+      var summTCost = tCost; //100
+      $('#summaString').addClass("activeString");
+      $('#summaString').append('Сумма: <span class="summCount">' + tCost +' </span><i style="font-size:12pt" class="fas fa-ruble-sign"></i>');
+    }
   });
   $("input[name='addStamps']").click(function(){
     $('#statusStringBlock').show(function(){});
-    let Count = ($("input[name='stampsCount']").val() + 'шт. ');
+    let Count = $("input[name='stampsCount']").val();
     let Rig = ('<br/>'+$("select[name='stampsRig']").val());
     let Type = (' ('+$("select[name='stampsType']").val()+')');
     $('#statusString').prepend('<p id="statusItem"><i class="fas fa-plus"></i> Штамп: ' + Count  + Rig + Type + '</p>');

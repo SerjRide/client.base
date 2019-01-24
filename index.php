@@ -313,8 +313,8 @@
                    <div class="col-md-4">
                      <label for="stampRig">Оснастка, mm</label>
                      <select class="form-control" name="stampRig">
-                       <option>30 &Oslash;</option>
-                       <option selected>40 &Oslash;</option>
+                       <option value="30">30 &Oslash;</option>
+                       <option value="40" selected>40 &Oslash;</option>
                      </select>
                     <br/>
                     <input class="form-control btn btn-info addProduct" type="button" name="addStamp" value="Добавить"/>

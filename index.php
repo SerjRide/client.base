@@ -546,7 +546,6 @@
                   </tr>";
         }
     echo "</table>";
-
     ?>
   </div>
   </div>

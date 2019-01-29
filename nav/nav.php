@@ -40,9 +40,9 @@
       </ul> -->
       <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
-          <input type="text" class="form-control" name="search" placeholder="Поиск" onkeyup="checkSearch(this.value)">
+          <input type="text" class="form-control" name="search" placeholder="Поиск" >
         </div>
-        <button type="submit" class="btn btn-default">Найти</button>
+        <!-- <button type="submit" class="btn btn-default">Найти</button> -->
       </form>
       <ul class="nav navbar-nav navbar-right">
         <li><a id="addOrderButton"  data-toggle="collapse" data-target="#addOrderPanel"><i class="fas fa-plus" style="font-size:14pt"></i></a></li>

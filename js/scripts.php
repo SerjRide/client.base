@@ -8,120 +8,120 @@
 <script type="text/javascript">
 $("select[name='product']").change(function(){
   if($("select[name='product']").val() === "vis") {
-    $('#bookForm').hide(function(){})
-    $('#visForm').show(function(){})
-    $('#flyForm').hide(function(){})
-    $('#layForm').hide(function(){})
-    $('#postForm').hide(function(){})
-    $('#stampForm').hide(function(){})
-    $('#stampsForm').hide(function(){})
-    $('#tableForm').hide(function(){})
-    $('#wformForm').hide(function(){})
+    $('#bookForm').hide(0,function(){})
+    $('#visForm').show(0,function(){})
+    $('#flyForm').hide(0,function(){})
+    $('#layForm').hide(0,function(){})
+    $('#postForm').hide(0,function(){})
+    $('#stampForm').hide(0,function(){})
+    $('#stampsForm').hide(0,function(){})
+    $('#tableForm').hide(0,function(){})
+    $('#wformForm').hide(0,function(){})
   }
   else if($("select[name='product']").val() === "book") {
-    $('#bookForm').show(function(){})
-    $('#visForm').hide(function(){})
-    $('#flyForm').hide(function(){})
-    $('#layForm').hide(function(){})
-    $('#postForm').hide(function(){})
-    $('#stampForm').hide(function(){})
-    $('#stampsForm').hide(function(){})
-    $('#tableForm').hide(function(){})
-    $('#wformForm').hide(function(){})
+    $('#bookForm').show(0,function(){})
+    $('#visForm').hide(0,function(){})
+    $('#flyForm').hide(0,function(){})
+    $('#layForm').hide(0,function(){})
+    $('#postForm').hide(0,function(){})
+    $('#stampForm').hide(0,function(){})
+    $('#stampsForm').hide(0,function(){})
+    $('#tableForm').hide(0,function(){})
+    $('#wformForm').hide(0,function(){})
   }
   else if($("select[name='product']").val() === "fly") {
-    $('#bookForm').hide(function(){})
-    $('#visForm').hide(function(){})
-    $('#flyForm').show(function(){})
-    $('#layForm').hide(function(){})
-    $('#postForm').hide(function(){})
-    $('#stampForm').hide(function(){})
-    $('#stampsForm').hide(function(){})
-    $('#tableForm').hide(function(){})
-    $('#wformForm').hide(function(){})
+    $('#bookForm').hide(0,function(){})
+    $('#visForm').hide(0,function(){})
+    $('#flyForm').show(0,function(){})
+    $('#layForm').hide(0,function(){})
+    $('#postForm').hide(0,function(){})
+    $('#stampForm').hide(0,function(){})
+    $('#stampsForm').hide(0,function(){})
+    $('#tableForm').hide(0,function(){})
+    $('#wformForm').hide(0,function(){})
   }
   else if($("select[name='product']").val() === "lay") {
-    $('#bookForm').hide(function(){})
-    $('#visForm').hide(function(){})
-    $('#flyForm').hide(function(){})
-    $('#layForm').show(function(){})
-    $('#postForm').hide(function(){})
-    $('#stampForm').hide(function(){})
-    $('#stampsForm').hide(function(){})
-    $('#tableForm').hide(function(){})
-    $('#wformForm').hide(function(){})
+    $('#bookForm').hide(0,function(){})
+    $('#visForm').hide(0,function(){})
+    $('#flyForm').hide(0,function(){})
+    $('#layForm').show(0,function(){})
+    $('#postForm').hide(0,function(){})
+    $('#stampForm').hide(0,function(){})
+    $('#stampsForm').hide(0,function(){})
+    $('#tableForm').hide(0,function(){})
+    $('#wformForm').hide(0,function(){})
   }
   else if($("select[name='product']").val() === "posters") {
-    $('#bookForm').hide(function(){})
-    $('#visForm').hide(function(){})
-    $('#flyForm').hide(function(){})
-    $('#layForm').hide(function(){})
-    $('#postForm').show(function(){})
-    $('#stampForm').hide(function(){})
-    $('#stampsForm').hide(function(){})
-    $('#tableForm').hide(function(){})
-    $('#wformForm').hide(function(){})
+    $('#bookForm').hide(0,function(){})
+    $('#visForm').hide(0,function(){})
+    $('#flyForm').hide(0,function(){})
+    $('#layForm').hide(0,function(){})
+    $('#postForm').show(0,function(){})
+    $('#stampForm').hide(0,function(){})
+    $('#stampsForm').hide(0,function(){})
+    $('#tableForm').hide(0,function(){})
+    $('#wformForm').hide(0,function(){})
   }
   else if($("select[name='product']").val() === "stamp") {
-    $('#bookForm').hide(function(){})
-    $('#visForm').hide(function(){})
-    $('#flyForm').hide(function(){})
-    $('#layForm').hide(function(){})
-    $('#postForm').hide(function(){})
-    $('#stampForm').show(function(){})
-    $('#stampsForm').hide(function(){})
-    $('#tableForm').hide(function(){})
-    $('#wformForm').hide(function(){})
+    $('#bookForm').hide(0,function(){})
+    $('#visForm').hide(0,function(){})
+    $('#flyForm').hide(0,function(){})
+    $('#layForm').hide(0,function(){})
+    $('#postForm').hide(0,function(){})
+    $('#stampForm').show(0,function(){})
+    $('#stampsForm').hide(0,function(){})
+    $('#tableForm').hide(0,function(){})
+    $('#wformForm').hide(0,function(){})
   }
   else if($("select[name='product']").val() === "stamps") {
-    $('#bookForm').hide(function(){})
-    $('#visForm').hide(function(){})
-    $('#flyForm').hide(function(){})
-    $('#layForm').hide(function(){})
-    $('#postForm').hide(function(){})
-    $('#stampForm').hide(function(){})
-    $('#stampsForm').show(function(){})
-    $('#tableForm').hide(function(){})
-    $('#wformForm').hide(function(){})
+    $('#bookForm').hide(0,function(){})
+    $('#visForm').hide(0,function(){})
+    $('#flyForm').hide(0,function(){})
+    $('#layForm').hide(0,function(){})
+    $('#postForm').hide(0,function(){})
+    $('#stampForm').hide(0,function(){})
+    $('#stampsForm').show(0,function(){})
+    $('#tableForm').hide(0,function(){})
+    $('#wformForm').hide(0,function(){})
   }
   else if($("select[name='product']").val() === "table") {
-    $('#bookForm').hide(function(){})
-    $('#visForm').hide(function(){})
-    $('#flyForm').hide(function(){})
-    $('#layForm').hide(function(){})
-    $('#postForm').hide(function(){})
-    $('#stampForm').hide(function(){})
-    $('#stampsForm').hide(function(){})
-    $('#tableForm').show(function(){})
-    $('#wformForm').hide(function(){})
+    $('#bookForm').hide(0,function(){})
+    $('#visForm').hide(0,function(){})
+    $('#flyForm').hide(0,function(){})
+    $('#layForm').hide(0,function(){})
+    $('#postForm').hide(0,function(){})
+    $('#stampForm').hide(0,function(){})
+    $('#stampsForm').hide(0,function(){})
+    $('#tableForm').show(0,function(){})
+    $('#wformForm').hide(0,function(){})
   }
   else if($("select[name='product']").val() === "wform") {
-    $('#bookForm').hide(function(){})
-    $('#visForm').hide(function(){})
-    $('#flyForm').hide(function(){})
-    $('#layForm').hide(function(){})
-    $('#postForm').hide(function(){})
-    $('#stampForm').hide(function(){})
-    $('#stampsForm').hide(function(){})
-    $('#tableForm').hide(function(){})
-    $('#wformForm').show(function(){})
+    $('#bookForm').hide(0,function(){})
+    $('#visForm').hide(0,function(){})
+    $('#flyForm').hide(0,function(){})
+    $('#layForm').hide(0,function(){})
+    $('#postForm').hide(0,function(){})
+    $('#stampForm').hide(0,function(){})
+    $('#stampsForm').hide(0,function(){})
+    $('#tableForm').hide(0,function(){})
+    $('#wformForm').show(0,function(){})
   }
   else {
-    $('#bookForm').hide(function(){})
-    $('#visForm').hide(function(){})
-    $('#flyForm').hide(function(){})
-    $('#layForm').hide(function(){})
-    $('#postForm').hide(function(){})
-    $('#stampForm').hide(function(){})
-    $('#stampsForm').hide(function(){})
-    $('#tableForm').hide(function(){})
-    $('#wformForm').hide(function(){})
+    $('#bookForm').hide(0,function(){})
+    $('#visForm').hide(0,function(){})
+    $('#flyForm').hide(0,function(){})
+    $('#layForm').hide(0,function(){})
+    $('#postForm').hide(0,function(){})
+    $('#stampForm').hide(0,function(){})
+    $('#stampsForm').hide(0,function(){})
+    $('#tableForm').hide(0,function(){})
+    $('#wformForm').hide(0,function(){})
   }
 });
 </script>
 <script>
   $("input[name='addVis']").click(function(){
-    $('#statusStringBlock').show(function(){});
+    $('#statusStringBlock').show(0,function(){});
     let visCount = Number($("select[name='visCount']").val());
 
     let visColor = $("select[name='visColor']").val();
@@ -191,7 +191,7 @@ $("select[name='product']").change(function(){
 
 
   $("input[name='addBook']").click(function(){
-    $('#statusStringBlock').show(function(){});
+    $('#statusStringBlock').show(0,function(){});
     let bookCount = Number($("input[name='bookCount']").val());
 
     let bookColor = $("select[name='bookColor']").val();
@@ -251,7 +251,7 @@ $("select[name='product']").change(function(){
 
 
   $("input[name='addFly']").click(function(){
-    $('#statusStringBlock').show(function(){});
+    $('#statusStringBlock').show(0,function(){});
     let Count = $("select[name='flyCount']").val();
     let Paper = $("select[name='flyPaper']").val();
     let Color = $("select[name='flyColor']").val();
@@ -265,7 +265,7 @@ $("select[name='product']").change(function(){
 
 
   $("input[name='addLay']").click(function(){
-    $('#statusStringBlock').show(function(){});
+    $('#statusStringBlock').show(0,function(){});
     let Product = $("select[name='layProduct']").val();
     // цена за 1
     if($("select[name='layProduct']").val() === "Буклет") var layProductCost = 1000;
@@ -310,7 +310,7 @@ $("select[name='product']").change(function(){
 
 
   $("input[name='addPost']").click(function(){
-    $('#statusStringBlock').show(function(){});
+    $('#statusStringBlock').show(0,function(){});
     let Count = ($("input[name='postCount']").val() + 'шт. ');
     let Paper = ('<br/>'+$("select[name='postPaper']").val());
     let Color = ('('+$("select[name='postColor']").val()+')');
@@ -318,7 +318,7 @@ $("select[name='product']").change(function(){
     $('#statusString').prepend('<p id="statusItem"><i class="fas fa-plus"></i> Плакаты: ' + Count  + Color + Tech + Paper + '</p>');
   });
   $("input[name='addStamp']").click(function(){
-    $('#statusStringBlock').show(function(){});
+    $('#statusStringBlock').show(0,function(){});
 
     let Rig = $("select[name='stampRig']").val();
     if($("select[name='stampRig']").val() === "30") var stampRigCost = 250;
@@ -350,21 +350,21 @@ $("select[name='product']").change(function(){
     }
   });
   $("input[name='addStamps']").click(function(){
-    $('#statusStringBlock').show(function(){});
+    $('#statusStringBlock').show(0,function(){});
     let Count = $("input[name='stampsCount']").val();
     let Rig = ('<br/>'+$("select[name='stampsRig']").val());
     let Type = (' ('+$("select[name='stampsType']").val()+')');
     $('#statusString').prepend('<p id="statusItem"><i class="fas fa-plus"></i> Штамп: ' + Count  + Rig + Type + '</p>');
   });
   $("input[name='addTable']").click(function(){
-    $('#statusStringBlock').show(function(){});
+    $('#statusStringBlock').show(0,function(){});
     let Count = ($("input[name='tableCount']").val() + 'шт. ');
     let Color = ('('+$("select[name='tableColor']").val()+')');
     let Format = ('<br/>Формат: ' + $("select[name='tableFormat']").val());
     $('#statusString').prepend('<p id="statusItem"><i class="fas fa-plus"></i> Таблички: ' + Count  + Color + Format + '</p>');
   });
   $("input[name='addWform']").click(function(){
-    $('#statusStringBlock').show(function(){});
+    $('#statusStringBlock').show(0,function(){});
     let Count = ($("input[name='wformCount']").val() + 'шт. ');
     let Paper = ('<br/>Материал: '+$("select[name='wformPaper']").val());
     let Color = ('('+$("select[name='wformColor']").val()+')');
@@ -390,5 +390,17 @@ $("select[name='product']").change(function(){
     $("#hiddenSumm").val(summ);
     document.getElementById("hiddenForm").submit();
   });
-
+</script>
+<script type="text/javascript">
+  function tabGen(data) {
+    $("#searchString").html(data);
+  }
+  $(document).ready(function(){
+    var searchString = $("[name='search']").val();
+    $.get("tableGen.php", {searchString: searchString}, tabGen);
+  })
+  $("[name='search']").keyup(function(){
+    var searchString = $("[name='search']").val();
+    $.get("tableGen.php", {searchString: searchString}, tabGen);
+  })
 </script>

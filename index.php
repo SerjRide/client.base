@@ -513,7 +513,16 @@
         else echo '';
      }
   //-------------------------------Генерация таблицы------------------------------------------------------------
-    $result = $mysqli->query('SELECT * FROM `cb_orders`');
+    if(empty($_POST['search'])) {
+      $result = $mysqli->query('SELECT * FROM `cb_orders`');
+    }
+    if(empty($_GET['search'])) {
+      $result = $mysqli->query('SELECT * FROM `cb_orders`');
+    }
+    else {
+      $reqvest = '"%'.$_GET['search'].'%"';
+      $result = $mysqli->query("SELECT * FROM `cb_orders` WHERE `Заказчик` like $reqvest");
+    }
         echo '<table class="table table-hover table-bordered">
                <div class="сustomers">
                 <tr>
@@ -554,5 +563,6 @@
 </div>
 <?php $mysqli->close();?>
 <?=file_get_contents("http://client.base/js/scripts.php")?>
+
 </body>
 </html>

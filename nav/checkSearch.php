@@ -8,6 +8,7 @@
   $mysqli->set_charset('utf8'); // устранение проблем с кодировкой
   $existing_customers = array();
   $result = $mysqli->query("SELECT `Заказчик` FROM `cb_orders`");
+  
   while($myrow = mysqli_fetch_array($result)) {
   $existing_customers[] = $myrow['Заказчик'];
   }

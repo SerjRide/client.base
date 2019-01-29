@@ -390,5 +390,4 @@ $("select[name='product']").change(function(){
     $("#hiddenSumm").val(summ);
     document.getElementById("hiddenForm").submit();
   });
-
 </script>

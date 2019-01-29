@@ -42,7 +42,7 @@
         <div class="form-group">
           <input type="text" class="form-control" name="search" placeholder="Поиск" onkeyup="checkSearch(this.value)">
         </div>
-        <button type="submit" class="btn btn-default">Отправить</button>
+        <button type="submit" class="btn btn-default">Найти</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
         <li><a id="addOrderButton"  data-toggle="collapse" data-target="#addOrderPanel"><i class="fas fa-plus" style="font-size:14pt"></i></a></li>
@@ -61,41 +61,5 @@
 <!-- JQuery-3.3.1 -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script type="text/javascript">
-function getXmlHttp() {
-  var xmlhttp;
-  try {
-    xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
-  } catch (e) {
-    try {
-      xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-    } catch (E) {
-      xmlhttp = false;
-    }
-  }
-  if (!xmlhttp && typeof XMLHttpRequest!='undefined') {
-    xmlhttp = new XMLHttpRequest();
-  }
-  return xmlhttp;
-}
-function checkSearch(search) {
-  var xmlhttp = getXmlHttp(); // Создаём объект XMLHTTP
-  xmlhttp.open('POST', 'nav/checkSearch.php', true); // Открываем асинхронное соединение
-  xmlhttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded'); // Отправляем кодировку
-  xmlhttp.send("search=" + encodeURIComponent(search)); // Отправляем POST-запрос
-  xmlhttp.onreadystatechange = function() { // Ждём ответа от сервера
-    if (xmlhttp.readyState == 4) { // Ответ пришёл
-      if(xmlhttp.status == 200) { // Сервер вернул код 200 (что хорошо)
-        if (xmlhttp.responseText == "error") {
-          document.querySelector("[name='search']").style.boxShadow="0 0 5px red";
-          // alert(test);
-        }
-        else document.querySelector("[name='search']").style.boxShadow="0 0 5px green";
-      }
-    }
-  };
-}
-</script>
-
 </body>
 </html>
